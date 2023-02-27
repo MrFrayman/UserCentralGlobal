@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Quote - UserCentral</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/UserCentralFounders.png" type="image/x-icon">
+</head>
+
+<body>
+    <section id="header">
+        <img src="/assets/ICON.png" alt="Logo" class="logo">
+        <nav>
+            <ul class="navbar">
+                <a href="/index.html">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Services</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </section>
+
+    <div class="heading">
+        <h1>Request <br>a Quote</h1>
+        <img src="/assets/UC-Transparent.png" alt="">
+    </div>
+
+    <img class="morph" src="/assets/UserCentralFounders.png" alt="">
+
+    <div class="formbox">
+        <form>
+            <div class="item">
+                <div>
+                    <span>Company Name *</span>
+                    <input type="text" name="companyName" placeholder="MyCompany" required>
+                </div>
+
+                <div>
+                    <span>Company's Website (optional)</span>
+                    <input type="url" name="companyWeb" placeholder="www.mycompany.xyz">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <span>Your First Name *</span>
+                    <input type="text" name="name" placeholder="Jhon" required>
+                </div>
+
+                <div>
+                    <span>Your Last Name *</span>
+                    <input type="text" name="lastName" placeholder="Doe" required>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <span>Your Work Email *</span>
+                    <input type="email" name="email" placeholder="jhondoe@mail.com" required>
+                </div>
+
+                <div>
+                    <span>Your Phone Number (optional)</span>
+                    <input type="tel" name="number" placeholder="+1 23 456 789">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <span>What is your Estimated <br>Budget for this project? *</span>
+                    <input type="number" name="budget" placeholder="$30">
+                </div>
+
+                <div>
+                    <span>Briefly describe the Project? *</span>
+                    <textarea name="projectinfo" id="" cols="40" rows="5"
+                        placeholder="This Project is about..."></textarea>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <span>Is there a deadline for the project? *</span>
+                    <input type="date" name="deadline" id="">
+                </div>
+
+                <div>
+                    <span>Extra Comments/Requirements (optional)</span>
+                    <textarea name="extra" id="" cols="30" rows="5"></textarea>
+                </div>
+            </div>
+
+            <input type="submit" class="submitBtn" value="Request Quote">
+            <p>Do you accept the terms of conditions? <a href="/assets/UserCentral-UserCentralGlobal T&C - Signed.pdf"><strong>T&C</strong></a></p>
+            <input type="checkbox" class="check" name="terms" id="" required>
+
+        </form>
+    </div>
+</body>
+
+</html>

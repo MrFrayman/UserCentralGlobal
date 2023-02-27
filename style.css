@@ -1,0 +1,766 @@
+@import url('https://fonts.cdnfonts.com/css/gotham');
+@font-face {
+    font-family: Campton Light;
+    src: url('assets/Campton-LightDEMO.otf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham Black', sans-serif;
+    font-family: 'Gotham Light', sans-serif;
+    font-family: 'Gotham Thin', sans-serif;
+    font-family: 'Gotham Book', sans-serif;
+    font-family: 'Gotham Ultra', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Gotham Ultra', sans-serif;
+    font-size: 44pt;
+}
+
+h2 {
+    font-family: 'Gotham Black', sans-serif;
+}
+
+h3 {
+    font-family: 'Gotham', sans-serif;
+}
+
+h4 {
+    font-family: 'Gotham Book', sans-serif;
+}
+
+p {
+    font-family: 'Gotham Book', sans-serif;
+}
+
+a {
+    font-family: 'Gotham Light', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background-color: #0000c5;
+    color: #fff;
+}
+
+#header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 0px 20px #070d1717;
+    height: 40px;
+    width: 100%;
+    max-width: 1206px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 80px;
+    z-index: 100;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+#header .logo {
+    width: 80px;
+    transform: translate(-260%);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    padding-left: 40px;
+    text-decoration: none;
+    list-style: none;
+    color: #1011FC;
+}
+
+.navbar li {
+    font-family: 'Inter';
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.navbar li:hover {
+    color: #0a1425;
+}
+
+.buttonNav {
+    width: 161px;
+    height: 47px;
+    background-color: #1011FC;
+    color: #ffffff;
+    font-family: "Inter";
+    font-size: 12pt;
+    font-weight: 500;
+    border-radius: 120px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+}
+
+.buttonNav {
+    transform: translate(140%);
+}
+
+.buttonNav:hover {
+    background-color: #1010fcd0;
+    box-shadow: 0px 2px 10px #0000c56b;
+}
+
+#hero .leftCard {
+    background-color: #ffffff;
+    width: 50%;
+    height: 600px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftCard img {
+    width: 400px;
+}
+
+#hero .rightCard {
+    background-color: #1011FC;
+    width: 50%;
+    height: 620px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightCard .heroText {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    transform: translateY(6%);
+}
+
+.rightCard .heroText h1 {
+    font-family: 'Campton Light', sans-serif;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-270%)
+}
+
+.GetQBtn {
+    background-color: #fff;
+    color: #1011FC;
+    border: none;
+    font-family: Gotham;
+    font-weight: 500;
+    font-size: 18pt;
+    width: 208px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.GetQBtn:hover {
+    box-shadow: 0px 3px 10px #ffffff77;
+}
+
+.learnMore {
+    background-color: #1011FC;
+    color: #fff;
+    border: solid #fff 3px;
+    font-family: Gotham;
+    font-weight: 500;
+    font-size: 18pt;
+    width: 208px;
+    height: 60px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.learnMore:hover {
+    color: #1011FC;
+    background-color: #fff;
+}
+
+.socials {
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    top: 510px;
+}
+
+.socials a i {
+    color: #101e36;
+    margin: 0vh 5vh 0vh 5vh;
+    transition: 0.4s;
+}
+
+.socials a i:hover {
+    color: #fff;
+}
+
+
+/* PORTFOLIO LURE SECTION */
+
+#portfolio {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#portfolio .bigCard {
+    background-color: #070D17;
+    width: 1300px;
+    height: 650px;;
+    margin-top: 10vh;
+    border-radius: 75px;
+}
+
+.bigCard .text {
+    margin: 15vh 20vh;
+}
+
+.bigCard .text h2 {
+    color: #fff;
+    font-family: "Gotham Light";
+    line-height: 126%;
+    font-size: 42pt;
+    width: 500px;
+}
+
+.bigCard .text p {
+    color: #ffffffad;
+    font-family: "Gotham Thin";
+    width: 400px;
+    line-height: 130%;
+    transform: translateY(-60%);
+}
+
+.bigCard .text button {
+    width: 200px;
+    height: 55px;
+    border-radius: 90px;
+    font-family: 'Inter';
+    font-size: 12pt;
+    background-color: #1011FC;
+    color: #fff;
+    border: none;
+    transform: translateY(-30%);
+    transition: 0.4s;
+}
+
+.bigCard .text button:hover {
+    cursor: pointer;
+    transform: translateY(-20%);
+}
+
+.bigCard .blue {
+    background-color: #C7DAFF;
+    height: 500px;
+    width: 350px;
+    right: 24px;
+    border-radius: 00px 72px 0px 0px;
+    position: absolute;
+    z-index: 1;
+}
+
+.bigCard .bluedark {
+    background-color: #1011FC;
+    height: 500px;
+    width: 300px;
+    right: 150px;
+    top: 146%;
+    border-radius: 00px 72px 0px 0px;
+    position: absolute;
+    z-index: 1;
+}
+
+.bigCard .boy {
+    height: 520px;
+    transform: translateY(-3.7%) translateX(-10%);
+}
+
+.smallCards {
+    display: flex;
+    justify-content: space-between;
+    margin: 10vh 5vh;
+}
+
+.smallCards .item {
+    background-color: #070D17;
+    color: #fff;
+    border-radius: 30px;
+    width: 380px;
+    height: 260px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.smallCards .item:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.smallCards .item h3 {
+    font-family: "Gotham Black";
+    font-size: 28pt;
+}
+
+.over {
+    background-color: #1011FC;
+    width: 380px;
+    height: 26px;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(900%);
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.over, .over2, .over3, .avb {
+    color: #ffffffcc;
+    font-size: 8pt;
+    letter-spacing: 6px;
+}
+
+.over2 {
+    background-color: #1011FC;
+    width: 380px;
+    height: 26px;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(900%) translateX(113%);
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.over3 {
+    background-color: #1011FC;
+    width: 380px;
+    height: 26px;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(900%) translateX(225.5%);
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* WHY CHOOSE US SECTION */
+
+#whyus {
+    margin: 5vh 0vh 0vh 0vh;
+    padding: 5vh 0vh;
+    background-color: #c7daff4f;
+    width: 100%;
+    height: 950px;
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+}
+
+#whyus h5 {
+    font-family: "Gotham Medium";
+    font-weight: 400;
+    font-size: 12pt;
+    color: #1011FC;
+}
+
+#whyus h2 {
+    font-family: "Gotham Medium";
+    font-weight: 400;
+    font-size: 38pt;
+    color: #070D17;
+    transform: translateY(-50%);
+}
+
+.container {
+    margin: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CARD 1 */
+
+.crd {
+    box-shadow: 0px 5px 30px #070d170e;
+    border: solid #00000015 2px;
+}
+
+.container .card {
+    background-color: #fff;
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    margin-left: 80px;
+}
+
+.card .circle {
+    background-color: rgba(255, 199, 0, 0.52);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    left: 200px;
+    top: 340%;
+}
+
+.container .card span {
+    font-family: "Gotham";
+    font-weight: 600;
+    font-size: 20pt;
+    position: absolute;
+    left: 280px;
+    top: 342%;
+}
+
+.container .card p {
+    color: #070d1762;
+    font-family: "Gotham";
+    font-weight: 400;
+    font-size: 14pt;
+    width: 260px;
+    text-align: left;
+    position: absolute;
+    left: 280px;
+    top: 348%;
+}
+
+/* CARD 2 */
+
+.container .card2 {
+    background-color: #fff;
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    margin-right: 80px;
+}
+
+.card2 .circle2 {
+    background-color: rgba(0, 255, 133, 0.52);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    left: 765px;
+    top: 340%;
+}
+
+.container .card2 span {
+    font-family: "Gotham";
+    font-weight: 600;
+    font-size: 20pt;
+    position: absolute;
+    left: 850px;
+    top: 342%;
+}
+
+.container .card2 p {
+    color: #070d1762;
+    font-family: "Gotham";
+    font-weight: 400;
+    font-size: 14pt;
+    width: 260px;
+    text-align: left;
+    position: absolute;
+    left: 850px;
+    top: 348%;
+}
+
+/* CARD 3 */
+
+.container .card3 {
+    background-color: #fff;
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    margin-left: 80px;
+}
+
+.card3 .circle3 {
+    background-color: rgba(0, 26, 255, 0.52);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    left: 200px;
+    top: 400%;
+}
+
+.container .card3 span {
+    font-family: "Gotham";
+    font-weight: 600;
+    font-size: 20pt;
+    position: absolute;
+    left: 280px;
+    top: 402%;
+}
+
+.container .card3 p {
+    color: #070d1762;
+    font-family: "Gotham";
+    font-weight: 400;
+    font-size: 14pt;
+    width: 260px;
+    text-align: left;
+    position: absolute;
+    left: 280px;
+    top: 408%;
+}
+
+/* CARD 4 */
+
+.container .card4 {
+    background-color: #fff;
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    margin-right: 80px;
+}
+
+.card4 .circle4 {
+    background-color: rgba(255, 0, 214, 0.52);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    left: 765px;
+    top: 400%;
+}
+
+.container .card4 span {
+    font-family: "Gotham";
+    font-weight: 600;
+    font-size: 20pt;
+    position: absolute;
+    left: 850px;
+    top: 402%;
+}
+
+.container .card4 p {
+    color: #070d1762;
+    font-family: "Gotham";
+    font-weight: 400;
+    font-size: 14pt;
+    width: 260px;
+    text-align: left;
+    position: absolute;
+    left: 850px;
+    top: 408%;
+}
+
+/* GET STARTED SECTION */
+
+#start {
+    background-color: rgba(11, 22, 39, 1);
+    height: 400px;
+    padding: 10vh 0vh 0vh 0vh;
+}
+
+#start .strcent {
+    position: absolute;
+    left: 149px;
+    width: 513px;
+    height: 247px;
+    float: left;
+}
+
+#start .strcent span {
+    color: #fff;
+    font-family: "Gotham";
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    transform: translateY(220%);
+}
+
+#start .strcent h2 {
+    color: #fff;
+    font-family: "Gotham";
+    font-weight: 500;
+    font-size: 51px;
+    transform: translateY(20%);
+
+}
+
+#start .strcent p {
+    color: rgba(255, 255, 255, 0.84);
+    font-family: "Gotham";
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    transform: translateY(-10%);
+}
+
+#start .form {
+    position: absolute;
+    left: 900px;
+    flex-direction: column;
+    display: flex;
+    transform: translateY(38%);
+}
+
+.form input {
+    height: 50px;
+    width: 300px;
+    background-color: rgba(217, 217, 217, 0.52);
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: "Gotham";
+    font-weight: 400;
+}
+
+.form input::placeholder {
+    color: #070D17;
+    font-family: "Gotham";
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.form .formSubmit {
+    width: 320px;
+    height: 50px;
+    background-color: #1011FC;
+    color: #fff;
+    border: none;
+    font-family: "Gotham";
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.form .formSubmit:hover {
+    opacity: 0.7;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: #070D17;
+    line-height: 2.5;
+}
+
+#footer .contain {
+    display: flex;
+    text-align: left;
+}
+
+#footer .contain .col {
+    display: inline-block;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#footer h4 {
+    font-size: 14pt;
+    color: #fff;
+    font-family: "Gotham";
+    font-weight: 500;
+}
+
+#footer li {
+    font-size: 13pt;
+    font-family: "Gotham";
+    font-weight: 400;
+}
+
+#footer ul {
+    display: inline-block;
+    list-style: none;
+    vertical-align: top;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s;
+}
+
+#footer a:hover {
+    color: #3939b8;
+}
+
+#footer img {
+    padding: 10vh 20vh 0vh 10vh;
+}
+
+#footer .foot-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    content: "";
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    margin-bottom: 2vh;
+}
+
+.credit {
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.RIGHTS {
+    font-family: "Gotham";
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.6;
+    padding-left: 3%;
+}
+
+.RIGHTS a {
+    font-weight: 400;
+    font-size: 12pt;
+    color: #fff;
+}
+
+.credit p {
+    position: sticky;
+    left: 80%;
+    color: rgba(255, 255, 255, 0.52);
+    font-family: "Gotham";
+    font-weight: 400;
+}

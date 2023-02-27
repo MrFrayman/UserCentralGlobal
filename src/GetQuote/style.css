@@ -1,0 +1,181 @@
+body {
+    background-color: #1011FC;
+    color: #000;
+    font-family: "Gotham";
+    margin: 0;
+    max-width: 1189px;
+}
+
+#header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 0px 20px #070d1717;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 80px;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+}
+
+#header .logo {
+    width: 80px;
+    transform: translate(-160%);
+}
+
+nav {
+    padding-left: 30%;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    padding-left: 40px;
+    text-decoration: none;
+    list-style: none;
+    color: #1011FC;
+}
+
+.navbar li {
+    font-family: 'Inter';
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.navbar li:hover {
+    color: #0a1425;
+}
+
+/* MAIN */
+
+.heading {
+    width: 90%;
+    height: 200px;
+    border-radius: 5vh;
+    background-color: #fff;
+    background-image: url("");
+    display: flex;
+    padding-left: 10vh;
+    margin-top: 5vh;
+    transform: translate(9%, 0%);
+}
+
+.heading h1 {
+    font-family: 'Gotham Black';
+    color: #0a1425;
+    font-size: 42pt;
+    width: 300px;
+}
+
+.heading img {
+    transform: scale(0.7);
+    margin-left: 35%;
+}
+
+.morph {
+    position: absolute;
+    z-index: -0;
+    height: 900px;
+    width: 83.5%;
+    left: 10%;
+    top: 54.8%;
+    border-radius: 5vh;
+}
+
+.formbox {
+    background-color: #ffffff31;
+    backdrop-filter: blur(18px);
+    width: 95%;
+    height: 900px;
+    border-radius: 5vh;
+    display: flex;
+    margin: 5vh;
+    transform: translate(9%, 0%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 6vh;
+}
+
+form .item {
+    display: flex;
+}
+
+form .item div {
+    margin: 5vh 0vh 0vh 5vh;
+    float: left;
+}
+
+form span {
+    margin-top: 3vh;
+    font-weight: 600;
+    color: #fff;
+}
+
+form input {
+    background-color: #ffffffa9;
+    backdrop-filter: blur(8px);
+    color: rgb(9, 5, 17);
+    border: solid #0000003d 1px;
+    font-family: "Inter";
+    font-size: 12pt;
+    font-weight: 600;
+    width: 60%;
+    height: 40px;
+    border-radius: 1vh;
+    margin-top: 2vh;
+}
+
+form input:focus {
+    outline: solid #1010fc60 1px;
+}
+
+form input::placeholder {
+    opacity: 0.3;
+}
+
+form textarea {
+    resize: none;
+    width: 80%;
+    border-radius: 1vh;
+    margin-top: 2vh;
+    font-family: "Inter";
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+form textarea::placeholder {
+    opacity: 0.3;
+}
+
+form textarea:focus {
+    outline: solid #1010fc60 1px;
+}
+
+form .check {
+    width: 20px;
+    height: 20px;
+}
+
+.submitBtn {
+    width: 320px;
+    height: 50px;
+    background-color: #1011FC;
+    color: #fff;
+    border: none;
+    font-family: "Gotham";
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.submitBtn:hover {
+    transform: scale(1.1);
+}
