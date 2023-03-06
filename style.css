@@ -429,7 +429,7 @@ html {
 }
 
 .card .circle {
-    background-color: rgba(255, 199, 0, 0.52);
+    content: url("/assets/3dWorld.png");
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -448,7 +448,7 @@ html {
 }
 
 .container .card p {
-    color: #070d1762;
+    color: #070d17;
     font-family: "Gotham";
     font-weight: 400;
     font-size: 14pt;
@@ -470,7 +470,7 @@ html {
 }
 
 .card2 .circle2 {
-    background-color: rgba(0, 255, 133, 0.52);
+    content: url("/assets/HandingMoney.png");
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -489,7 +489,7 @@ html {
 }
 
 .container .card2 p {
-    color: #070d1762;
+    color: #070d17;
     font-family: "Gotham";
     font-weight: 400;
     font-size: 14pt;
@@ -511,7 +511,7 @@ html {
 }
 
 .card3 .circle3 {
-    background-color: rgba(0, 26, 255, 0.52);
+    content: url("/assets/3dClock.png");
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -530,7 +530,7 @@ html {
 }
 
 .container .card3 p {
-    color: #070d1762;
+    color: #070d17;
     font-family: "Gotham";
     font-weight: 400;
     font-size: 14pt;
@@ -552,7 +552,7 @@ html {
 }
 
 .card4 .circle4 {
-    background-color: rgba(255, 0, 214, 0.52);
+    content: url("/assets/3dCrown.png");
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -571,7 +571,7 @@ html {
 }
 
 .container .card4 p {
-    color: #070d1762;
+    color: #070d17;
     font-family: "Gotham";
     font-weight: 400;
     font-size: 14pt;
@@ -670,6 +670,46 @@ html {
     opacity: 0.7;
 }
 
+.modal {
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0px 2px 20px #00000080;
+    transform: translate(215%, 30%);
+    border-radius: 3vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalcontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modalcontent h4 {
+    font-family: "Gotham";
+    font-weight: 700;
+    font-size: 18pt;
+    line-height: 0;
+}
+
+.modalcontent .check {
+    width: 60px;
+    padding-left: 40px;
+}
+
+.modal .cross {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
 /* FOOTER */
 
 #footer {
@@ -763,4 +803,44 @@ html {
     color: rgba(255, 255, 255, 0.52);
     font-family: "Gotham";
     font-weight: 400;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .mobile {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+    }
+    .mobile h1 {
+        font-size: 12pt;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #hero {
+        display: none;
+    }
+
+    #portfolio {
+        display: none;
+    }
+
+    #whyus {
+        display: none;
+    }
+
+    #start {
+        display: none;
+    }
+
+    #footer {
+        display: none;
+    }
 }

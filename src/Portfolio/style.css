@@ -1,0 +1,225 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background-color: #0000c5;
+    color: #fff;
+}
+
+#header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 0px 20px #070d1717;
+    height: 40px;
+    width: 100%;
+    max-width: 1206px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 80px;
+    z-index: 100;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+#header .logo {
+    width: 80px;
+    transform: translate(-260%);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    padding-left: 40px;
+    text-decoration: none;
+    list-style: none;
+    color: #1011FC;
+}
+
+.navbar li {
+    font-family: 'Inter';
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.navbar li:hover {
+    color: #0a1425;
+}
+
+.buttonNav {
+    width: 161px;
+    height: 47px;
+    background-color: #1011FC;
+    color: #ffffff;
+    font-family: "Inter";
+    font-size: 12pt;
+    font-weight: 500;
+    border-radius: 120px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+}
+
+.buttonNav {
+    transform: translate(140%);
+}
+
+.buttonNav:hover {
+    background-color: #1010fcd0;
+    box-shadow: 0px 2px 10px #0000c56b;
+}
+
+/* Body and Main */
+
+#main {
+    padding: 5vh;
+}
+
+.contain {
+    display: flex;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.primary {
+    background-color: #ffffffaf;
+    backdrop-filter: blur(29px);
+    background-size: cover;
+    width: 60%;
+    height: 500px;
+    border-radius: 3vh;
+}
+
+.primary h2 {
+    font-family: "Gotham";
+    font-weight: 500;
+    font-size: 40px;
+    color: #0a1425;
+    width: 500px;
+    margin-left: 10vh;
+    margin-top: 8vh;
+}
+
+.primary h4 {
+    font-family: "Gotham Light";
+    font-weight: 100px;
+    font-size: 20px;
+    color: #0a1425;
+    width: 80%;
+    margin-left: 10vh;
+}
+
+#main .primaryImg {
+    position: absolute;
+    width: 760px;
+    height: 500px;
+    z-index: -1;
+    border-radius: 3vh;
+    opacity: 0.5;
+}
+
+.icons {
+    display: flex;
+    margin-left: 10vh;
+    margin-top: 16%;
+    bottom: 0;
+    align-items: center;
+}
+
+.icons button {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 4vh;
+    width: 160px;
+    height: 50px;
+
+    font-family: 'Inter';
+    font-size: 18px;
+    transition: 0.6s;
+}
+
+.icons button:hover {
+    background-color: #fff;
+    color: #000000;
+    border: solid #000 1px;
+    font-weight: 600;
+}
+
+.icons i {
+    margin-left: 5vh;
+    transition: 0.6s;
+}
+
+.icons i:hover {
+    color: rgb(104, 177, 172);
+    cursor: pointer;
+}
+
+.secondary {
+    background-image: url("/assets/UserCentralFounders.png");
+    background-size: cover;
+    background-color: lightcoral;
+    width: 40%;
+    height: 500px;
+    border-radius: 3vh;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    background-color: rgb(149, 255, 167);
+    box-shadow: 0px 10px 20px #00293336;
+    width: 600px;
+    height: 400px;
+    border-radius: 3vh;
+    margin: 5vh 0vh;
+    transition: 0.4s;
+}
+
+.item:hover {
+    opacity: 0.9;
+    transform: scale(0.99);
+}
+
+.item1 {
+    background-image: url('/assets/portfolioItems/WebDev/upnexWebsite.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.item2 {
+    background-image: url('/assets/portfolioItems/WebDev/WebsitePrev-01.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.item3 {
+    background-image: url('/assets/portfolioItems/Design/RedS.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.item4 {
+    background-image: url('/assets/portfolioItems/Design/TheGeniusStore.jpg');
+    background-size: cover;
+    background-position: top;
+}
