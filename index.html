@@ -1,230 +1,388 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - UserCentral. Global</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/ICON.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/efc773f8b7.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</head>
-
-<body>
-    <!-- scripts and CDN -->
-    <script src="https://smtpjs.com/v3/smtp.js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UserCentral - a Solutions Startup</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="testim.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "usercentralglobal@gmail.com",
+          Password: "282B6D930989BEE74F36A5B2B7E3C6596E47",
+          To: "usercentralglobal@gmail.com",
+          From: "maarifsmart@gmail.com",
+          Subject: document.getElementById("name").value,
+          Body: document.getElementById("message").value,
+        }).then(function (message) {
+          alert("Request Successfully Sent!");
+        });
+      }
     </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<div class="mobile">
-    <h1>UserCentral Mobile is Under Construction</h1>
-    <p>Please Proceed on Desktop</p>
-</div>
-    <!-- Main Section -->
-
-    <section id="header">
-        <img src="assets/ICON.png" alt="Logo" class="logo">
-        <nav>
-            <ul class="navbar">
-                <a href="/">
-                    <li>Home</li>
-                </a>
-                <a href="/src/About-UserCentral">
-                    <li>About</li>
-                </a>
-                <a href="/src/Services">
-                    <li>Services</li>
-                </a>
-                <a href="#">
-                    <li>Contact</li>
-                </a>
-                <a href="/src/Services"><button class="buttonNav">Get Started</button></a>
-            </ul>
-        </nav>
-    </section>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/IBS - GenZ (TAG).png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li class="nav-link"><a href="#services">Services</a></li>
+          <li class="nav-link"><a href="#work">Work</a></li>
+          <li class="nav-link"><a href="#about">About</a></li>
+          <li class="nav-link"><a href="#learn">Learn</a></li>
+        </ul>
+      </nav>
+      <a href="#contact"><button>Meet with a Designer</button></a>
+    </header>
 
     <section id="hero">
-        <div class="contain">
-            <div class="leftCard">
-                <img src="assets/UC-Transparent.png" alt="">
-            </div>
-
-            <div class="rightCard">
-                <div class="heroText">
-                    <h1>We<span style="font-family:Gotham Thin;">'</span>re Building <br> Startups Together</h1>
-                </div>
-                <div class="buttons">
-                    <a href="/src/GetQuote/index.html"><button class="GetQBtn">Get Quote</button></a>
-                    <a href="#whyus"><button class="learnMore">Learn More</button></a>
-                </div>
-                <div class="socials">
-                    <a href="https://www.instagram.com/usercentralpk/" target="_blank"><i
-                            class="fa-brands fa-facebook fa-3x"></i></a>
-                    <a href="https://www.instagram.com/usercentralpk/" target="_blank"><i
-                            class="fa-brands fa-instagram fa-3x"></i></a>
-                    <a href="https://www.instagram.com/usercentralpk/" target="_blank"><i
-                            class="fa-brands fa-twitter fa-3x"></i></a>
-                </div>
-            </div>
-        </div>
+      <div class="grid-1-2">
+        <h1>
+          Get solutions that make you <span class="txt-high">Thrilled.</span>
+        </h1>
+        <p>
+          Experience our real-time processes and get professional services
+          delivered in as fast as 48hrs.
+        </p>
+        <button class="bigBtn">Meet with a Designer</button>
+      </div>
+      <img src="/fone.png" alt="" />
     </section>
 
-    <section id="portfolio">
-        <div class="bigCard">
-            <div class="blue"></div>
-            <div class="bluedark"><img src="assets/boy.png" class="boy" alt=""></div>
-            <div class="text">
-                <h2>Our Services can Pivot your Business into Possible Success.</h2>
-                <p>a survey suggest, clients decide the culture of the company through their website and branding.</p>
-                <a href="/src/Portfolio/index.html"><button>View Portfolio ↗</button></a>
-            </div>
+    <section id="services">
+      <div>
+        <div class="service-header">
+          <p class="header_subtitle">Reliable, transparent & efficient</p>
+          <h1 class="header_title">We Sky-Rocket Your Brand</h1>
+          <p class="header_description">
+            Committed to delivering exceptional website solutions that not only
+            meet but exceed your expectations
+          </p>
         </div>
-        <div class="smallCards">
-            <div class="item">
-                <h3>Web Design & Development</h3>
-            </div>
-            <div class="over">
-                <h6 class="avb">AVAILABLE</h6>
-            </div>
 
-            <div class="item">
-                <h3>SMMA & Digital Marketing</h3>
-            </div>
-            <div class="over2">
-                <h6 class="avb">AVAILABLE</h6>
-            </div>
+        <main class="card_grid">
+          <section class="card cyan">
+            <h2 class="card_title">Website Design and Development</h2>
+            <p class="card_content">
+              Monitors activity to identify project roadblocks
+            </p>
+            <img
+              class="card_img"
+              src="https://raw.githubusercontent.com/davidsonaguiar/frontendmentor/main/Four%20card%20feature%20section/images/icon-supervisor.svg"
+              alt="Supervisor"
+            />
+          </section>
 
-            <div class="item">
-                <h3>2D Design & Illustration</h3>
-            </div>
-            <div class="over3">
-                <h6 class="avb">AVAILABLE</h6>
-            </div>
-        </div>
+          <section class="card red">
+            <h2 class="card_title">Digital Marketing</h2>
+            <p class="card_content">
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <img
+              class="card_img"
+              src="https://raw.githubusercontent.com/davidsonaguiar/frontendmentor/main/Four%20card%20feature%20section/images/icon-team-builder.svg"
+              alt="page-home"
+            />
+          </section>
+
+          <section class="card blue">
+            <h2 class="card_title">Content Creation</h2>
+            <p class="card-content">
+              Regularly evaluates our talent to ensure quality
+            </p>
+            <img
+              class="card_img"
+              src="https://raw.githubusercontent.com/davidsonaguiar/frontendmentor/main/Four%20card%20feature%20section/images/icon-karma.svg"
+              alt="Karma"
+            />
+          </section>
+
+          <section class="card orange">
+            <h2 class="card_title">Website Maintenance and Support</h2>
+            <p class="card_content">
+              Uses data from past projects to provide better delivery estimates
+            </p>
+            <img
+              class="card_img"
+              src="https://raw.githubusercontent.com/davidsonaguiar/frontendmentor/main/Four%20card%20feature%20section/images/icon-calculator.svg"
+              alt="Calculator"
+            />
+          </section>
+        </main>
+      </div>
     </section>
 
-    <section id="whyus">
-        <h5>WHY USERCENTRAL</h5>
-        <h2>Why Choose Us</h2>
-        <div class="container">
-            <div class="card crd">
-                <span>Multiple Time Zones</span>
-                <p>our teams are diverse and work from more than 3 Time Zones that match yours</p>
-                <div class="circle"></div>
+    <section id="testimonials">
+      <section id="testim" class="testim">
+        <!--         <div class="testim-cover"> -->
+        <div class="wrap">
+          <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+          <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+          <ul id="testim-dots" class="dots">
+            <li class="dot active"></li>
+            <!--
+                            -->
+            <li class="dot"></li>
+            <!--
+                            -->
+            <li class="dot"></li>
+            <!--
+                            -->
+            <li class="dot"></li>
+            <!--
+                            -->
+            <li class="dot"></li>
+          </ul>
+          <div id="testim-content" class="cont">
+            <div class="active">
+              <div class="test-img">
+                <img
+                  src="https://sinsi.princeton.edu/sites/g/files/toruqf2066/files/styles/3x4_750w_1000h/public/people/chen_emily_edit.jpg?itok=iWd2_Wx3"
+                  alt="Emily Chen's Avatar"
+                />
+              </div>
+              <h2>Emily Chen, Marketing Director at Bright Ideas Inc</h2>
+              <p>
+                UserCentral helped us revamp our website and improve our online
+                presence. Their team was professional, responsive, and easy to
+                work with. The new website has received great feedback from our
+                customers, and we've seen an increase in traffic and engagement.
+                I highly recommend UserCentral for any web design project.
+              </p>
             </div>
-            <div class="card2 crd">
-                <span>No Extra Charges</span>
-                <p>we quote according to your needs and requirements, no more than that!</p>
-                <div class="circle2"></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="card3 crd">
-                <span>24 Hours Support</span>
-                <p>after delivering your projects, UserCentral's Team is available for your help.</p>
-                <div class="circle3"></div>
-            </div>
-            <div class="card4 crd">
-                <span>Royalty Club</span>
-                <p>impressed with what you got? come back again and have a discount on your next project.</p>
-                <div class="circle4"></div>
-            </div>
-        </div>
-    </section>
 
-    <section id="start">
-        <div class="strcent">
-            <span>START USERCENTRAL</span>
-            <h2>Don't keep waiting, pivot your startup now!</h2>
-            <p>Get in touch with us and learn more about our offers & services.</p>
-        </div>
-        <div class="form">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <button type="submit" class="formSubmit" onclick="submit()">Get Started</button>
-        </div>
-         <!-- Modal PopUp -->
-    <div class="modal" id="popup">
-        <i class="fa-solid fa-xmark cross fa-2x" onclick="close()"></i>
-        <div class="modalcontent">
             <div>
-                <h4>Forms Sent</h4>
-                <p>We'll be in touch shortly</p>
+              <div class="test-img">
+                <img
+                  src="https://media.licdn.com/dms/image/C4D03AQGiRxzwwz7leg/profile-displayphoto-shrink_800_800/0/1590725673147?e=2147483647&v=beta&t=HlrOBseG2sf0ZiaQHRn_TpJlAX1e_6ORlXEa2y7wucY"
+                  alt=""
+                />
+              </div>
+              <h2>Michael Patel, Founder of Tech Solutions LLC:</h2>
+              <p>
+                Working with UserCentral was a fantastic experience. They took
+                the time to understand our brand and goals, and delivered a
+                website that exceeded our expectations. Their attention to
+                detail and commitment to customer satisfaction are commendable.
+                I look forward to working with UserCentral on future projects.
+              </p>
             </div>
+
             <div>
-                <img src="assets/checkmark.gif" class="check" alt="">
+              <div class="test-img">
+                <img
+                  src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2020/07/01/08/anna-davis.jpg?crop=1:1,smart&width=280&auto=webp&quality=75"
+                  alt=""
+                />
+              </div>
+              <h2>Anna Davis, E-commerce Manager at Global Trends Co:</h2>
+              <p>
+                UserCentral helped us launch our e-commerce website, and we
+                couldn't be happier with the results. Their team guided us
+                through the process, providing valuable insights and expertise.
+                The new website has significantly improved our online sales and
+                customer engagement. I would highly recommend UserCentral for
+                any e-commerce project
+              </p>
             </div>
+
+            <div>
+              <div class="test-img">
+                <img
+                  src="https://s3.amazonaws.com/media.mixrank.com/profilepic/376cffb134f14a2c16b09944efdc4c58"
+                  alt=""
+                />
+              </div>
+              <h2>James Nguyen, Small Business Owner:</h2>
+              <p>
+                UserCentral redesigned our website and helped us establish a
+                strong online presence. Their team was professional, creative,
+                and easy to work with. The new website has generated positive
+                feedback from our customers and has helped us attract new
+                business. I would definitely recommend UserCentral to anyone
+                looking for web design services.
+              </p>
+            </div>
+
+            <div>
+              <div class="test-img">
+                <img
+                  src="https://media.licdn.com/dms/image/C5603AQG2aRLaewM6wQ/profile-displayphoto-shrink_800_800/0/1587557564598?e=2147483647&v=beta&t=_HxZ1y3DUjO4kv5A_anKoUNDSlY4f-mwxe3LNBxRgTQ"
+                  alt=""
+                />
+              </div>
+              <h2>Samantha Wilson, Marketing Manager at Fresh Start Foods:</h2>
+              <p>
+                UserCentral's digital marketing services have been instrumental
+                in helping us reach our target audience and increase brand
+                awareness. Their team is knowledgeable, proactive, and dedicated
+                to delivering results. We've seen a significant improvement in
+                our online visibility and engagement since working with
+                UserCentral. I highly recommend their services.
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
+        <!--  </div> -->
+      </section>
+
+      <script src="https://use.fontawesome.com/1744f3f671.js"></script>
     </section>
 
-    <!-- FOOTER -->
+    <section id="projects">
+      <h2>Our Clients are <span class="txt-high">Thrilled</span> with our Instant design processes </h2>
+      <!-- Company information -->
+      <div class="portfolio-container">
+        <article class="prop-card">
+          <figure><img src="/web1.png" alt=""></figure>
+          <h2 class="prop-card-title">E-Commerce Platform - Global Trends Co.</h2>
+          <p>Course • Mindful Mike</p>
+        </article>
+        <article class="prop-card">
+          <figure><img src="/web1.png" alt=""></figure>
+          <h2 class="prop-card-title">Website & Branding - Tech Solutions LLC</h2>
+          <p>Course • Mindful Mike</p>
+        </article>
+        <article class="prop-card row-2">
+          <figure><img src="https://assets.codepen.io/605876/person.png" alt=""></figure>
+          <h2 class="prop-card-title">Mike's mindful morning</h2>
+          <p>Course • Mindful Mike</p>
+        </article>
+      </div>
+    </section>
 
-    <section id="footer">
+    <section id="contact">
+      <section class="get-in-touch">
+        <h1 class="title">Get in touch</h1>
+        <form class="contact-form row">
+          <div class="form-field col x-50">
+            <input id="name" class="input-text js-input" type="text" required />
+            <label class="label" for="name">Name</label>
+          </div>
+          <div class="form-field col x-50">
+            <input
+              id="email"
+              class="input-text js-input"
+              type="email"
+              required
+            />
+            <label class="label" for="email">E-mail</label>
+          </div>
+          <div class="form-field col x-100">
+            <input
+              id="message"
+              class="input-text js-input"
+              type="text"
+              required
+            />
+            <label class="label" for="message">Message</label>
+          </div>
+          <div class="form-field col x-100 align-center">
+            <button>
+              <input
+                class="submit-btn"
+                type="submit"
+                value="Submit"
+                onclick="sendEmail()"
+              />
+            </button>
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <footer>
+      <!-- FOOTER -->
+
+      <section id="footer">
         <div class="contain">
-            <a href="#top"><img src="/assets/ICON.png" alt="UserCentral Logo"></a>
-            <div class="col fst">
-                <ul>
-                    <h4>Team</h4>
-                    <a href="/src/About-UserCentral">
-                        <li>About Us</li>
-                    </a>
-                    <a href="">
-                        <li>Testimonials ↗</li>
-                    </a>
-                    <a href="/src/">
-                        <li>Contact</li>
-                    </a>
-                    <a href="/src/GetQuote">
-                        <li>Reach Private</li>
-                    </a>
-                </ul>
-            </div>
+          <a href="#hero"
+            ><img src="/IBS - GenZ (TAG)" alt="UserCentral Logo"
+          /></a>
+          <div class="col fst">
+            <ul>
+              <h4>Team</h4>
+              <a href="/src/About-UserCentral">
+                <li>About Us</li>
+              </a>
+              <a href="">
+                <li>Testimonials ↗</li>
+              </a>
+              <a href="/src/">
+                <li>Contact</li>
+              </a>
+              <a href="/src/GetQuote">
+                <li>Reach Private</li>
+              </a>
+            </ul>
+          </div>
 
-            <div class="col">
-                <ul>
-                    <h4>Services</h4>
-                    <a href="/src/Services/">
-                        <li>Web Development</li>
-                    </a>
-                    <a href="/src/Services/">
-                        <li>Digital Marketing</li>
-                    </a>
-                    <a href="/src/Services/">
-                        <li>Graphic Designing</li>
-                    </a>
-                    <a href="/src/Services/">
-                        <li>SEOptimization</li>
-                    </a>
-                </ul>
-            </div>
+          <div class="col">
+            <ul>
+              <h4>Services</h4>
+              <a href="/src/Services/">
+                <li>Web Development</li>
+              </a>
+              <a href="/src/Services/">
+                <li>Digital Marketing</li>
+              </a>
+              <a href="/src/Services/">
+                <li>Graphic Designing</li>
+              </a>
+              <a href="/src/Services/">
+                <li>SEOptimization</li>
+              </a>
+            </ul>
+          </div>
 
-            <div class="col">
-                <ul>
-                    <h4>Resources</h4>
-                    <a href="/src/Portfolio">
-                        <li>Portfolio</li>
-                    </a>
-                    <a href="/src/GetQuote">
-                        <li>Legal Advisories</li>
-                    </a>
-                    <a href="/assets/UserCentral-UserCentralGlobal T&C - Signed.pdf">
-                        <li>User Agreement</li>
-                    </a>
-                    <a href="mailto:hello@usercentralglobal.com">
-                        <li>Address on-demand</li>
-                    </a>
-                </ul>
-            </div>
+          <div class="col">
+            <ul>
+              <h4>Resources</h4>
+              <a href="/src/Portfolio">
+                <li>Portfolio</li>
+              </a>
+              <a href="/src/GetQuote">
+                <li>Legal Advisories</li>
+              </a>
+              <a href="/assets/UserCentral-UserCentralGlobal T&C - Signed.pdf">
+                <li>User Agreement</li>
+              </a>
+              <a href="mailto:hello@usercentralglobal.com">
+                <li>Address on-demand</li>
+              </a>
+            </ul>
+          </div>
         </div>
         <div class="line"></div>
         <div class="credit">
-            <i class="RIGHTS">&#169;2022/23 &nbsp;<span><a href="#hero">UserCentral</a></span>. All Rights Reserved -
-                Developed & Powered by thy;</i>
-            <p>With ❤ by Maarif Al-Kadhim</p>
+          <i class="RIGHTS"
+            >&#169;2022/23 &nbsp;<span><a href="#hero">UserCentral</a></span
+            >. All Rights Reserved - Developed & Powered by thy;</i
+          >
+          <p>With ❤ by Maarif Al-Kadhim</p>
         </div>
-    </section>
-</body>
-
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
